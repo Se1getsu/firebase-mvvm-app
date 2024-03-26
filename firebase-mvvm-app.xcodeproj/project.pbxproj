@@ -13,10 +13,26 @@
 		A68AE20C2BB2A05E005ABA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A68AE20B2BB2A05E005ABA72 /* Assets.xcassets */; };
 		A68AE20F2BB2A05E005ABA72 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A68AE20E2BB2A05E005ABA72 /* Base */; };
 		A6C979A32BB2B10A005EA3A5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A6C979A22BB2B10A005EA3A5 /* SnapKit */; };
-		A6C979A52BB2B10A005EA3A5 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A6C979A42BB2B10A005EA3A5 /* SnapKit-Dynamic */; };
 		A6C979A82BB2BC39005EA3A5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A6C979A72BB2BC39005EA3A5 /* FirebaseAuth */; };
 		A6C979AA2BB2BC39005EA3A5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A6C979A92BB2BC39005EA3A5 /* FirebaseFirestore */; };
+		A6C979AF2BB2C634005EA3A5 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = A6C979AE2BB2C634005EA3A5 /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		A6C979B12BB2C9A9005EA3A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6C979B02BB2C9A9005EA3A5 /* GoogleService-Info.plist */; };
+		A6C979B52BB301E9005EA3A5 /* FirebaseAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = A6C979B42BB301E9005EA3A5 /* FirebaseAuthUI */; };
+		A6C979B72BB301E9005EA3A5 /* FirebaseGoogleAuthUI in Frameworks */ = {isa = PBXBuildFile; productRef = A6C979B62BB301E9005EA3A5 /* FirebaseGoogleAuthUI */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A661B9B92BB30EE6001546C9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A68AE1FF2BB2A05D005ABA72 /* firebase-mvvm-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "firebase-mvvm-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +42,7 @@
 		A68AE20B2BB2A05E005ABA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A68AE20E2BB2A05E005ABA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A68AE2102BB2A05E005ABA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C979B02BB2C9A9005EA3A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,9 +51,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6C979A32BB2B10A005EA3A5 /* SnapKit in Frameworks */,
+				A6C979B52BB301E9005EA3A5 /* FirebaseAuthUI in Frameworks */,
+				A6C979AF2BB2C634005EA3A5 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				A6C979B72BB301E9005EA3A5 /* FirebaseGoogleAuthUI in Frameworks */,
 				A6C979AA2BB2BC39005EA3A5 /* FirebaseFirestore in Frameworks */,
 				A6C979A82BB2BC39005EA3A5 /* FirebaseAuth in Frameworks */,
-				A6C979A52BB2B10A005EA3A5 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +67,7 @@
 			children = (
 				A68AE2012BB2A05D005ABA72 /* firebase-mvvm-app */,
 				A68AE2002BB2A05D005ABA72 /* Products */,
+				A6C979AD2BB2C634005EA3A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,8 +88,16 @@
 				A68AE20B2BB2A05E005ABA72 /* Assets.xcassets */,
 				A68AE20D2BB2A05E005ABA72 /* LaunchScreen.storyboard */,
 				A68AE2102BB2A05E005ABA72 /* Info.plist */,
+				A6C979B02BB2C9A9005EA3A5 /* GoogleService-Info.plist */,
 			);
 			path = "firebase-mvvm-app";
+			sourceTree = "<group>";
+		};
+		A6C979AD2BB2C634005EA3A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +110,7 @@
 				A68AE1FB2BB2A05D005ABA72 /* Sources */,
 				A68AE1FC2BB2A05D005ABA72 /* Frameworks */,
 				A68AE1FD2BB2A05D005ABA72 /* Resources */,
+				A661B9B92BB30EE6001546C9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -91,9 +120,11 @@
 			name = "firebase-mvvm-app";
 			packageProductDependencies = (
 				A6C979A22BB2B10A005EA3A5 /* SnapKit */,
-				A6C979A42BB2B10A005EA3A5 /* SnapKit-Dynamic */,
 				A6C979A72BB2BC39005EA3A5 /* FirebaseAuth */,
 				A6C979A92BB2BC39005EA3A5 /* FirebaseFirestore */,
+				A6C979AE2BB2C634005EA3A5 /* FirebaseAnalyticsWithoutAdIdSupport */,
+				A6C979B42BB301E9005EA3A5 /* FirebaseAuthUI */,
+				A6C979B62BB301E9005EA3A5 /* FirebaseGoogleAuthUI */,
 			);
 			productName = "firebase-mvvm-app";
 			productReference = A68AE1FF2BB2A05D005ABA72 /* firebase-mvvm-app.app */;
@@ -127,6 +158,7 @@
 				A68AE2162BB2A725005ABA72 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				A6C979A12BB2B10A005EA3A5 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				A6C979A62BB2BC39005EA3A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A6C979B32BB301E9005EA3A5 /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */,
 			);
 			productRefGroup = A68AE2002BB2A05D005ABA72 /* Products */;
 			projectDirPath = "";
@@ -144,6 +176,7 @@
 			files = (
 				A68AE20C2BB2A05E005ABA72 /* Assets.xcassets in Resources */,
 				A68AE20F2BB2A05E005ABA72 /* Base in Resources */,
+				A6C979B12BB2C9A9005EA3A5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -290,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -402,6 +435,14 @@
 				minimumVersion = 10.23.0;
 			};
 		};
+		A6C979B32BB301E9005EA3A5 /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/FirebaseUI-iOS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -415,11 +456,6 @@
 			package = A6C979A12BB2B10A005EA3A5 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		A6C979A42BB2B10A005EA3A5 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A6C979A12BB2B10A005EA3A5 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
 		A6C979A72BB2BC39005EA3A5 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A6C979A62BB2BC39005EA3A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -429,6 +465,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A6C979A62BB2BC39005EA3A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		A6C979AE2BB2C634005EA3A5 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6C979A62BB2BC39005EA3A5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		A6C979B42BB301E9005EA3A5 /* FirebaseAuthUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6C979B32BB301E9005EA3A5 /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
+			productName = FirebaseAuthUI;
+		};
+		A6C979B62BB301E9005EA3A5 /* FirebaseGoogleAuthUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6C979B32BB301E9005EA3A5 /* XCRemoteSwiftPackageReference "FirebaseUI-iOS" */;
+			productName = FirebaseGoogleAuthUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
