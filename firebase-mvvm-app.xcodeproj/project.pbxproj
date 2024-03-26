@@ -78,6 +78,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A68AE2182BB2A78C005ABA72 /* PBXTargetDependency */,
 			);
 			name = "firebase-mvvm-app";
 			productName = "firebase-mvvm-app";
@@ -108,6 +109,9 @@
 				Base,
 			);
 			mainGroup = A68AE1F62BB2A05D005ABA72;
+			packageReferences = (
+				A68AE2162BB2A725005ABA72 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = A68AE2002BB2A05D005ABA72 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,6 +145,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A68AE2182BB2A78C005ABA72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = A68AE2172BB2A78C005ABA72 /* SwiftLintPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A68AE20D2BB2A05E005ABA72 /* LaunchScreen.storyboard */ = {
@@ -349,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A68AE2162BB2A725005ABA72 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A68AE2172BB2A78C005ABA72 /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A68AE2162BB2A725005ABA72 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A68AE1F72BB2A05D005ABA72 /* Project object */;
 }
