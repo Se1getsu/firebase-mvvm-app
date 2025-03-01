@@ -48,7 +48,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: FUIAuthDelegate {
-    func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, url: URL?, error: (any Error)?) {
+    nonisolated func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, url: URL?, error: (any Error)?) {
         if let error {
             print("error: \(error)")
         } else {
